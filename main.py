@@ -102,10 +102,10 @@ if (False): #totalstart.total_seconds()<540
             break
         except NoSuchElementException:
             time.sleep(5)
-    #finalsubmit=driver.find_element(by='xpath',value='//*[@id="TL_WEB_CLOCK_WK_TL_SAVE_PB"]').click()
-    #driver.close()
-    #driver.switch_to.window(chwd[0])
-    #driver.close()
+    finalsubmit=driver.find_element(by='xpath',value='//*[@id="TL_WEB_CLOCK_WK_TL_SAVE_PB"]').click()
+    driver.close()
+    driver.switch_to.window(chwd[0])
+    driver.close()
 elif(True): #totalend.total_seconds()<300
     loginurl='https://my.wisc.edu/'
     driver.get(loginurl)
@@ -141,8 +141,8 @@ elif(True): #totalend.total_seconds()<300
             break
         except NoSuchElementException:
             time.sleep(5)
-    #finalsubmit=driver.find_element(by='xpath',value='//*[@id="TL_WEB_CLOCK_WK_TL_SAVE_PB"]').click()
-    #driver.close()
-    #driver.switch_to.window(chwd[0])
-    #driver.close()
+    finalsubmit=driver.find_element(by='xpath',value='//*[@id="TL_WEB_CLOCK_WK_TL_SAVE_PB"]').click()
+    driver.close()
+    driver.switch_to.window(chwd[0])
+    driver.close()
 driver.close()
